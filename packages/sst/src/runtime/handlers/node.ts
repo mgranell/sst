@@ -134,7 +134,7 @@ export const useNodeHandler = Context.memo(async () => {
           await fs.symlink(
             path.resolve(dir),
             path.resolve(path.join(input.out, "node_modules")),
-            "dir"
+            "junction"
           );
         } catch {}
       }
